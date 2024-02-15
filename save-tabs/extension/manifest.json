@@ -1,0 +1,20 @@
+{
+    "name": "Save Tabs",
+    "version": "1.0",
+    "description": "Save your active tabs by a topic. Later you can reference or open the same tabs.",
+    "permissions": ["tabs"],
+    "manifest_version": 2,
+    "icons": {
+        "16": "icon16_dark.png",
+        "48": "icon48_dark.png",
+        "128": "icon128_dark.png"
+    },
+    "browser_action": {
+        "default_icon": "icon16_dark.png",
+        "default_popup": "./popup-ui/index.html"
+    },
+    "background": {
+        "scripts": ["background.js"],
+        "persistent": false
+    }
+}

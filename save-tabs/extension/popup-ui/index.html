@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Save Tabs</title>
+  <link rel="stylesheet" href="css-reset.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="container__header">
+      <h1>Save Tabs</h1>
+      <button title="close" type="button">
+        <img id="close-popup-icon" src="./icons/close-line-icon.svg"/>
+      </button>
+    </div>
+    <div class="container__search">
+      <input id="topics" type="text" placeholder="topics"/>
+      <img id="search-icon" src="./icons/search-icon.svg"/>
+    </div>
+    <div class="container__tabs" id="tabs"></div>
+    <div class="container__save">
+      <button id="save-tabs" title="save tabs" type="button">Save</button>
+    </div>
+  </div>
+  <script src="logic.js"></script>
+</body>
+</html>

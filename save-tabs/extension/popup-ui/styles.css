@@ -1,0 +1,112 @@
+body {
+  padding: 0.5rem;
+}
+
+body * {
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+  font-size: 1.75rem;
+}
+
+img {
+  width: 1rem;
+  height: 1rem;
+}
+
+.container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  width: 100%;
+  min-width: 350px;
+}
+
+.container__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 100%;
+}
+
+.container__header button {
+  cursor: pointer;
+  background-color: transparent;
+  border: 0;
+}
+
+.container__search {
+  position: relative;
+  width: 100%;
+  margin-top: 0.5rem;
+}
+
+.container__search input {
+  font-size: 1.25rem;
+  background-color: transparent;
+  padding: 0.25rem;
+  padding-right: 1.5rem;
+  width: 100%;
+}
+
+.container__search #search-icon {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  width: 1rem;
+  height: 1rem;
+  z-index: -1;
+}
+
+.container__tabs {
+  display: block;
+  width: 100%;
+  overflow: hidden auto;
+  max-height: 200px;
+}
+
+.container__tab {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  font-size: 1.125rem;
+  margin-top: 0.25rem;
+  padding: 0.25rem 0;
+}
+
+.container__tab:not(:last-of-type) {
+  border-bottom: 1px solid #ccc;
+}
+
+.container__tab input {
+  cursor: pointer;
+  transform: scale(1.25);
+  margin-right: 0.5rem;
+}
+
+.container__modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 200px;
+  font-size: 2rem;
+  color: green;
+}
+
+.container__save {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 0.5rem;
+}
+
+.container__save button {
+  font-size: 1.25rem;
+  cursor: pointer;
+}
